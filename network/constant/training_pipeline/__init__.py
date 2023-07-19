@@ -8,7 +8,7 @@ ARTIFACT_DIR: str = "artifacts"
 PREPROCSSING_OBJECT_FILE_NAME: str = "preprocessing.pkl"
 TARGET_COLUMN: str = "Result"
 EXP_NAME: str = f"{PIPELINE_NAME}-{TIMESTAMP}"
-APP_ARTIFACTS_BUCKET: str = "network-artifacts23"
+APP_ARTIFACTS_BUCKET: str = "network-artifacts11"
 
 
 """Constants related to Data Ingestion stage
@@ -48,14 +48,14 @@ DATA_TRANSFORMATION_IMPUTER_PARAMS: dict = {
 MODEL_TRAINER_DIR_NAME: str = "model_trainer"
 MODEL_TRAINER_TRAINED_MODEL_DIR: str = "trained_model"
 MODEL_TRAINER_BEST_MODEL_DIR: str = "best_model"
-MODEL_TRAINER_EXPECTED_SCORE: float = 0.3
+MODEL_TRAINER_EXPECTED_SCORE: float = 0.6
 MODEL_TRAINER_MODEL_CONFIG_FILE_PATH: str = "config/model.yaml"
 MODEL_TRAINER_MODEL_METRIC_KEY: str = "roc_auc_score"
 
 """Constants for Model Evaluation
 """
-MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.01
-MODEL_EVALUATION_THRESHOLD: float = 0.3
+MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.03
+MODEL_EVALUATION_THRESHOLD: float = 0.6
 MODEL_EVALUATION_MODEL_TYPE: str = "classifier"
 
 """ 
