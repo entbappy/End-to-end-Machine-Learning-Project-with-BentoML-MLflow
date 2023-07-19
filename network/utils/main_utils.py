@@ -213,8 +213,7 @@ def build_and_push_bento_image(model_uri: str) -> None:
 
         logging.info("Logged into AWS ECR")
 
-        os.system(f"docker build --tag=566373416292.dkr.ecr.us-east-1.amazonaws.com/{training_pipeline.MODEL_PUSHER_BENTOML_MODEL_IMAGE}:latest")
-
+      
         os.system(
             f"bentoml containerize {training_pipeline.MODEL_PUSHER_BENTOML_SERVICE_NAME}:latest -t 566373416292.dkr.ecr.us-east-1.amazonaws.com/{training_pipeline.MODEL_PUSHER_BENTOML_MODEL_IMAGE}:latest"
         )
