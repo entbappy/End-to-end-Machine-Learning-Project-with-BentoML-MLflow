@@ -1,0 +1,10 @@
+service: "network.ml.model.model_service:svc"
+labels:
+    owner: bappy
+    stage: dev
+include:
+    - "network/constant/training_pipeline/__init__.py"
+    - "network/ml/model/*"
+python:
+    requirements_txt: $BENTOML_MLFLOW_MODEL_PATH/mlflow_model/requirements.txt
+    lock_packages: False

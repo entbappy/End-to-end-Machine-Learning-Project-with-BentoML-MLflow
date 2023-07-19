@@ -1,0 +1,49 @@
+grid_search:
+  class: GridSearchCV
+  module: sklearn.model_selection
+  params:
+    cv: 3
+    verbose: 3
+    n_jobs: -1
+    scoring: roc_auc
+
+model_selection:
+  module_0:
+    class: RandomForestClassifier
+    module: sklearn.ensemble
+    search_param_grid:
+      n_estimators:
+        - 10
+        - 50
+        - 100
+        - 130
+      max_depth:
+        - 2
+        - 3
+        - 4
+        - 5
+      criterion:
+        - gini
+        - entropy
+
+  module_1:
+    class: XGBClassifier
+    module: xgboost
+    search_param_grid:
+      learning_rate:
+        - 0.5
+        - 0.1
+        - 0.01
+        - 0.001
+
+      max_depth:
+        - 3
+        - 5
+        - 10
+        - 20
+
+      n_estimators:
+        - 10
+        - 50
+        - 100
+        - 200

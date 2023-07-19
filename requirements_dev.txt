@@ -1,0 +1,6 @@
+certifi==2022.12.7
+ipykernel==6.19.2
+pip-chill==1.0.1
+seaborn==0.12.2
+wincertstore==0.2
+-e .
