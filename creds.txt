@@ -1,6 +1,6 @@
-bentoml-buc11
-mlflow server -h 0.0.0.0 --default-artifact-root s3://bentoml-buc11
-export MLFLOW_TRACKING_URI=http://ec2-54-210-132-109.compute-1.amazonaws.com:5000/
+mlflow-art11
+mlflow server -h 0.0.0.0 --default-artifact-root s3://mlflow-art11
+export MLFLOW_TRACKING_URI=http://ec2-52-1-181-135.compute-1.amazonaws.com:5000/
 
 
 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

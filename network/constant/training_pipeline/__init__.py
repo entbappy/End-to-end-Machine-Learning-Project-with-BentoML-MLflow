@@ -8,7 +8,7 @@ ARTIFACT_DIR: str = "artifacts"
 PREPROCSSING_OBJECT_FILE_NAME: str = "preprocessing.pkl"
 TARGET_COLUMN: str = "Result"
 EXP_NAME: str = f"{PIPELINE_NAME}-{TIMESTAMP}"
-APP_ARTIFACTS_BUCKET: str = "network-artifacts11"
+APP_ARTIFACTS_BUCKET: str = "network-art11"
 
 
 """Constants related to Data Ingestion stage
