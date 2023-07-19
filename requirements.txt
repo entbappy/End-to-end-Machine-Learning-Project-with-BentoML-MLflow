@@ -7,6 +7,6 @@ neuro-mf==0.0.5
 pip-chill==1.0.1
 wincertstore==0.2
 xgboost==1.7.2
--e .
+# -e .
 
 # pip install --upgrade bentoml

@@ -15,7 +15,7 @@ data
 logs
 artifacts
 mlruns
-
+creds.txt
 # Distribution / packaging
 .Python
 build/
