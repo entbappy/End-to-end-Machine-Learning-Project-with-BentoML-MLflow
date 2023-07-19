@@ -76,7 +76,6 @@ jobs:
 
       - name: Install the requirements
         run: |
-          pip3 install --upgrade pip
           pip3 install -r requirements.txt
 
       - name: Run the training pipeline code
@@ -109,3 +108,7 @@ jobs:
           AWS_DEFAULT_REGION: us-east-1
         run: |
           aws ec2 wait instance-terminated --instance-ids ${{ needs.start-runner.outputs.ec2-instance-id }}
+
+
+
+# pip3 install --upgrade pip
